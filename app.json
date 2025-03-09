@@ -1,18 +1,34 @@
 {
- "name": "🧚‍♀️𝗠𝗔𝗡𝗨-𝗠𝗗-𝗩❼💗",
-  "description": "Javascript WhatsApp bot made by Manul Official",
-  "logo": "https://telegra.ph/file/ef48cc8d2d26081f7d46a.jpg",
+  "name": "ASITHA-MD",
+  "description": "Javascript WhatsApp bot made by Asitha",
+  "logo": "https://telegra.ph/file/38a4ba6f7a51c15f5feaf.jpg",
   "keywords": ["bot"],
   "success_url": "/",
 
-    "env": {
-        "SESSION_ID": {
-            "description": "Type the Session-ID you got from pair or scan qr.",
-            "required": true,
-            "value": "put session id here"
-        }
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
     },
-    "buildpacks": [
+ "NEWS_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    },
+"AUTO_NEWS_SENDER": {
+      "description": "true or false",
+      "required": false
+    } ,
+"TIKTOK_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    } ,
+    "AUTO_TIKTOK_SENDER": {
+      "description": "true or false",
+      "required": false
+    } 
+},
+
+     "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
